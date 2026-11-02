@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <meta name="description" content="Join Easy Coffee membership to enjoy convenient online ordering, exclusive coffee offers, member discounts and exciting rewards.">
+    <meta name="keywords" content="Easy Coffee membership, online coffee ordering, exclusive offers, coffee rewards, member discounts, coffee shop Pretoria">
+
+    <title>Become a Member | Easy Coffee Pretoria CBD</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+        
+            
+    
+</head>
+<body class="become-a-member">
+    <nav class="navbar">
+        <a href="index.html" target="_blank">HOME</a>
+        <a href="Menu.html" target="_blank">MENU</a>
+        <a href="specialoffers.html" target="_blank">SPECIAL OFFERS</a>
+        <a href="about.html" target="_blank">ABOUT</a>
+        <a href="contact.html" target="_blank">CONTACT</a>
+        <a href="becomeamember.html" target="_blank"class="active">BECOME A MEMBER </a>
+    </nav>
+    <div class="member-C">
+        <h1><u>Become a Member</u></h1>
+        <p>To enjoy member's only benefits on selected products.</p>
+        <form id="registrationform" action="register.php" method="post">
+           <a href="login.html" target="_blank" class="link">
+            Already a Member?
+            </a>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:<span class="required">*</span></label>
+                    </td>
+                    <td><input type="text" id="name" name="first_name" placeholder="Sipho" required></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname:<span class="required">*</span></label></td>
+                    <td><input type="text" id="surname" name="surname" placeholder="Khumalo" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:<span class="required">*</span></label></td>
+                    <td><input type="email" id="email" name="email" placeholder="siphok@gmail.com" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Mobile Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="0832368105" /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:<span class="required">*</span></label></td>
+                    <td><input type="password" id="password" name="password" minlength="8" required /></td>
+                    </tr>
+                <tr>
+                    <td><label for="confirmpassword">Confirm Password:</label></td>
+                    <td><input type="password" id="confirmPassword" name="confirm_password" minlength="8" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="date_of_birth" /></td>
+                </tr>
+                
+                <tr>
+
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male" />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" />
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="Other" />
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="home_address">
+                            Home Address:<span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" id="home_address" name="home_address" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:<span class="required">*</span></label></td>
+                    <td>
+                        <select id="city" name="city" required>
+
+                            <option value="">--select a city--</option>
+                            <option value="Johannesburg">
+                                Johannesburg
+                            </option>
+                            <option value="Pretoria">Pretoria</option>
+                            <option value="Polokwane">
+                                Polokwane
+                            </option>
+                            <option value="Cape TOWN">
+                                Cape Town
+                            </option>
+                            <option value="East LONDON">
+                                East LONDON
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="province">Province:<span class="required">*</span></label></td>
+                    <td>
+                        <select id="province" name="province" required>
+                            <option value="">--select--</option>
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="Eastern cape">Eastern Cape</option>
+                            <option value="Westerncape">Western Cape</option>
+                            <option value="Northencape">Northern Cape</option>
+                            <option value="KwaZulu-Natal">Kwa-Zulu Natal</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Mpumalang">Mpumalanga</option>
+                            <option value="Free State">Free state</option>
+                            <option value="Northwest">North West</option>
+
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="postal_code">Postal code</label>
+                    </td>
+                    <td>
+                        <input type="text" id="postal_code" 
+                               name="postal_code" 
+                               inputmode="numeric"
+                               pattern="[0-9]{4}" 
+                               maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <button type="reset">Reset</button>
+                        </td>
+                    <td>
+                    <button type="submit" id="submitBtn">submit</button>
+                    </td>
+                    
+
+
+                </tr>
+            </table>
+            <a href="login.html" target="_blank">
+                Already a Member?
+            </a>
+        </form>
+       
+        </div>
+    
+    <footer>
+        <hr>
+        <p>(c) 2026 Easy coffee. All rigts reserved</p>
+    </footer>
+    <script src="Script1.js"></script>
+</body>
+</html>
+
+
+    
+    
+

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="checkout-page">
+    <h1>Easy Coffee</h1>
+    <header>
+        <p>Complete your odder</p>
+    </header>
+
+    <main class="checkout-container">
+        <!--your odder summary-->
+        <section class="order-summary">
+            <h2>Your odder</h2>
+            <div id="checkout-items">
+                <p>Your Items appear here</p>
+            </div>
+            <h3>Total:R<span id="checkout-total">0.00</span></h3>
+        </section>
+        <!--cutomer information-->
+        <section class="customer-details">
+            <h2>Customer Infromation</h2>
+            <form id="checkout-form">
+                <label for="customer-name">Full Name</label>
+                <input type="text" id="customer-name" required>
+                <label for="cutomer-email">Emaill Address</label>
+                <input type="email" id="customer-email" required>
+                <label for="custormer-phome">Phone Number</label>
+                <input type="tel" id="customer-phone" required>
+                <label for="devlivery-address">Delivery Address</label>
+                <textarea id="delivery-adddress" rows="4" required></textarea>
+                <button type="submit" id="confirm-odder">
+                    Confirm odder
+                </button>
+            </form>
+        </section>
+    </main>
+    <!-- Order Confirmation -->
+    <section id="order-confirmation" hidden>
+
+        <h2>Order Successfully Placed!</h2>
+
+        <p>Thank you, <span id="confirmed-name"></span>!</p>
+
+        <h3>Order Receipt</h3>
+
+        <p>Order Number: <strong id="order-number"></strong></p>
+
+        <div id="receipt-items"></div>
+
+        <h3>Total: R<span id="confirmed-total"></span></h3>
+
+        <p>Thank you for choosing Easy Coffee!</p>
+
+        <button type="button" id="return-menu">
+            Return to Menu
+        </button>
+
+    </section>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

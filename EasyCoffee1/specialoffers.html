@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Special Offers | Easy Coffee Pretoria</title>
+
+    <meta name="description" content="Explore Easy Coffee's Monday and Friday specials, with exclusive member offers on coffee and delicious cake slices.">
+
+    <meta name="keywords" content="Easy Coffee special offers, Monday coffee specials, Friday specials, member discounts, coffee deals">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="special-offers">
+
+    <nav class="navbar">
+        <a href="index.html" target="_blank">HOME</a>
+        <a href="Menu.html" target="_blank">MENU</a>
+        <a href="specialoffers.html" target="_blank" class="active">SPECIAL OFFERS</a>
+        <a href="about.html" target="_blank">ABOUT</a>
+        <a href="contact.html" target="_blank">CONTACT</a>
+        <a href="becomeamember.html" target="_blank">BECOME A MEMBER</a>
+    </nav>
+
+    <main>
+
+        <h1 align="center">SPECIAL OFFERS</h1>
+
+        <!-- TAB BUTTONS -->
+
+        <div class="offer-tabs">
+
+            <button class="tab-button active"
+                    onclick="openOffer(event, 'monday')">
+                Monday Offers
+            </button>
+
+            <button class="tab-button"
+                    onclick="openOffer(event, 'friday')">
+                Friday Offers
+            </button>
+
+            <button class="tab-button"
+                    onclick="openOffer(event, 'members')">
+                Member Offers
+            </button>
+
+        </div>
+
+        <!-- MONDAY OFFERS -->
+
+        <section id="monday" class="tab-content">
+
+            <h2>MONDAY SPECIALS</h2>
+
+            <table border="1" cellpadding="10" align="center">
+
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Espresso</td>
+                    <td>Refreshingly strong and rich</td>
+                    <td>R15</td>
+                </tr>
+
+                <tr>
+                    <td>Chocolate cake slice</td>
+                    <td>Has creamy icing on top</td>
+                    <td>R20</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- FRIDAY OFFERS -->
+
+        <section id="friday" class="tab-content">
+
+            <h2>FRIDAY SPECIALS</h2>
+
+            <table border="1" cellpadding="10" align="center">
+
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Koeksister</td>
+                    <td>Plain</td>
+                    <td>R10</td>
+                </tr>
+
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>Espresso with steamed milk and foam</td>
+                    <td>R15</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- MEMBER OFFERS -->
+
+        <section id="members" class="tab-content">
+
+            <h2>MEMBER EXCLUSIVE OFFERS</h2>
+
+            <p>
+                Become an Easy Coffee member to enjoy exclusive
+                promotions on selected products.
+            </p>
+
+            <a href="becomeamember.html" target="_blank">
+                Become a Member
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PROMOTIONAL MODAL -->
+
+    <button id="openModal" class="modal-trigger">
+        View Special Offer
+    </button>
+
+    <div id="offerModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal">&times;</button>
+
+            <h2>Easy Coffee Special Offer!</h2>
+
+            <p>
+                Enjoy our delicious coffee and freshly baked treats
+                at special prices.
+            </p>
+
+            <p><strong>Become a member to enjoy exclusive offers!</strong></p>
+
+            <a href="becomeamember.html" target="_blank">
+                Become a Member
+            </a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <hr>
+        <p>(c) 2026 Easy Coffee. All rights reserved.</p>
+    </footer>
+
+    <script src="offers.js"></script>
+
+</body>
+</html>

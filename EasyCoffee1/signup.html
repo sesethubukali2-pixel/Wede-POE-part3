@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+</head>
+<body class="login-page">
+    <nav class="navbar">
+    <a href="index.html" target="_blank">HOME</a>
+    <a href="Menu.html" target="blank">Menu</a>
+    <a href="specialoffers.html" target="_blank">SPECIAL OFFERS</a>
+    <a href="about.html" target="_blank">ABOUT US</a>
+    <a href="contact.html" target="_blank">CONTACT</a>
+    <a href="becomeamember.html" target="blank">BECOME A MEMEBER</a>
+    </nav>
+    <main class="login-container">
+        <h1>Menber Login</h1>
+        <p>Welcome back to Easy cofee !</p>
+        <form id="loginform" action="login.php" method="post">
+            <label for="loginUsername">Username or Email</label>
+            <input 
+            type="text" 
+            id="loginUsername" 
+            placeholder="Enter your username or email" 
+            required
+            >
+            <label for="loginpassword">Password:</label>
+            <input 
+            type="password"
+            id="loginPassword"
+            name="loginPassword"
+            placeholder="Enter your password"
+            required
+            >
+
+        <button type="reset">resert</button>
+        <button type="login">login</button>
+        </form>
+        <p class="registr-link">
+            Not a member yet ?
+            <a href="becomeamember.html" target=">_blank">register here</a>
+        </p>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2026 Easy Coffee. All rights recieved</p>
+    </footer>
+</body>
+</html>

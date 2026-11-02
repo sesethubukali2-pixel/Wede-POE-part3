@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MENU | Coffee, Pastries and Pies</title>
+
+    <meta name="description"
+          content="Explore the Easy Coffee menu featuring freshly brewed coffee, tea, delicious pies, doughnuts, koeksisters and cake slices.">
+
+    <meta name="keywords"
+          content="Easy Coffee menu, coffee, tea, pies, cake slices, doughnuts, koeksisters, cappuccino, latte, espresso">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="menu">
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html">HOME</a>
+
+        <a href="Menu.html" class="active">MENU</a>
+
+        <a href="specialoffers.html">SPECIAL OFFERS</a>
+
+        <a href="about.html">ABOUT</a>
+
+        <a href="contact.html">CONTACT</a>
+
+        <a href="becomeamember.html">BECOME A MEMBER</a>
+
+        <a href="OrderHistory.html" target="_blank">
+            Order History
+        </a>
+
+    </nav>
+
+
+    <!-- MENU HEADING -->
+
+    <div class="menu-heading">
+
+        <h1>EASY COFFEE</h1>
+
+        <h2>COFFEE, TEA & PASTRIES MENU</h2>
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- SHOPPING CART -->
+
+    <section class="cart-section">
+
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cart-items">
+
+            <p>Your cart is empty.</p>
+
+        </div>
+
+        <h3>
+            Total: R<span id="cart-total">0.00</span>
+        </h3>
+
+        <a href="Checkout.html"
+           target="_blank"
+           id="checkout-button">
+
+            Checkout
+
+        </a>
+
+    </section>
+
+
+    <!-- FILTERING AND SORTING CONTROLS -->
+
+    <section class="product-controls">
+
+        <h2>Find Your Products</h2>
+
+
+        <!-- CATEGORY FILTER -->
+
+        <label for="category-filter">
+            Filter by Category:
+        </label>
+
+        <select id="category-filter">
+
+            <option value="all">All Products</option>
+
+            <option value="coffee">Coffee</option>
+
+            <option value="tea">Tea</option>
+
+            <option value="pies">Pies</option>
+
+            <option value="doughnuts">Doughnuts</option>
+
+            <option value="koeksisters">Koeksisters</option>
+
+            <option value="cakes">Cake Slices</option>
+
+        </select>
+
+
+        <!-- PRODUCT SORTING -->
+
+        <label for="sort-products">
+            Sort Products:
+        </label>
+
+        <select id="sort-products">
+
+            <option value="default">Default Order</option>
+
+            <option value="price-low">
+                Price: Low to High
+            </option>
+
+            <option value="price-high">
+                Price: High to Low
+            </option>
+
+            <option value="name-az">
+                Name: A to Z
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- COFFEE PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">COFFEE</h2>
+
+        <div class="product-grid" id="coffee-products">
+
+            <!-- JavaScript loads coffee products here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- TEA PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">TEA</h2>
+
+        <div class="product-grid" id="tea-products">
+
+            <!-- JavaScript loads tea products here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">PIES</h2>
+
+        <div class="product-grid" id="pies-products">
+
+            <!-- JavaScript loads pies here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- DOUGHNUT PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">DOUGHNUTS</h2>
+
+        <div class="product-grid" id="doughnuts-products">
+
+            <!-- JavaScript loads doughnuts here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- KOEKSISTER PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">KOEKSISTERS</h2>
+
+        <div class="product-grid" id="koeksisters-products">
+
+            <!-- JavaScript loads koeksisters here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- CAKE PRODUCTS -->
+
+    <section class="product-section">
+
+        <h2 class="section-title">CAKE SLICES</h2>
+
+        <div class="product-grid" id="cakes-products">
+
+            <!-- JavaScript loads cakes here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <hr>
+
+        <p>(c) 2026 Easy Coffee. All rights reserved.</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+
+    <script src="products.js"></script>
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
